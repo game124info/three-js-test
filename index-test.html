@@ -51,11 +51,11 @@
         mesh.position.y = -2;
         scene.add(mesh)
         var mesh = new THREE.Mesh(geometry, material);
-        mesh.position.x = -2;
+        mesh.position.x = -3;
         scene.add(mesh)
 
-        var light = new THREE.PointLight(0xFFFFFF, 1, 500);
-        light.position.set(10, 5, 25);
+        var light = new THREE.PointLight(0xFFFFFF, 1, 800);
+        light.position.set(10, 15, 25);
         scene.add(light)
         var render = function() {
             requestAnimationFrame(render);
@@ -64,7 +64,7 @@
 
         function onMouseMove(event) {
             event.preventDefault();
-            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.x = (event.clientX / window.innerWidth) * 2 - 2;
             mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
             raycaster.setFromCamera(mouse, camera);
             var intersects = raycaster.intersectObjects(scene.children, true);
@@ -76,7 +76,7 @@
                     x: 2,
                     ease: Expo.easeOut
                 })
-                this.tl.to(intersects[i].object.scale, 0.5, {
+                this.tl.to(intersects[i].object.scale, 0.7, {
                     x: 1,
                     ease: Expo.easeOut
                 })
@@ -84,7 +84,7 @@
                     x: Math.PI * .5,
                     ease: Expo.easeOut
                 })
-                this.tl.to(intersects[i].object.position, 0.5, {
+                this.tl.to(intersects[i].object.position, 0.7, {
                     x: 1,
                     ease: Expo.easeOut
                 })
