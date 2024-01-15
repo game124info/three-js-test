@@ -1,0 +1,5 @@
+title: Your Site Title
+markdown: kramdown
+theme: minima  # Replace with the name of your preferred theme or use a custom theme
+plugins:
+  - jekyll-feed  # Enables an Atom feed for your site
