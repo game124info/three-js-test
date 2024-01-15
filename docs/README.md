@@ -18,7 +18,7 @@ If you find this project helpful, please consider sponsoring its development by 
 
 # Table of contents
 
-- [Installation](#Installation)
+- [Installation](./installation.md)
 - [StandardCard Interface](#StandardCard)
 - [StandardDeck](#StandardDeck)
 - [CardDeck Model](#CardDeck)
